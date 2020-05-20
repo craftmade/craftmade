@@ -1,0 +1,36 @@
+//
+// FOOTER
+//
+
+
+.footer {
+    border-top: 1px solid #eee;
+
+    .footer-content {
+        padding: 20px 0 15px;
+
+        p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+            float: left;
+        }
+
+        ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin-left: 20px;
+                float: left;
+                font-size: 14px;
+            }
+        }
+
+        a {
+            color: #666;
+        }
+    }
+}

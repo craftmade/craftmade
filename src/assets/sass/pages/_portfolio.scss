@@ -1,0 +1,120 @@
+.portfolio-section {
+    background: #eeeeee;
+    padding: 0;
+
+    .item {
+        width: 50%;
+        float: left;
+        padding-bottom: 50%;
+        transition: all .25s ease-in-out;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s ease;
+
+        .link{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 9;
+            background: rgba(6,6,6,.85);
+            transition: all .3s ease;
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                border-bottom: 2px solid #ddd;
+                color: #ddd;
+                font-weight: 600;
+                font-size: 16px;
+                display: block;
+                cursor: pointer;
+                line-height: 1.2;
+
+                &:hover {
+                    transition: all .3s ease;
+                    text-decoration: none;
+                    border-bottom: 2px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+
+        &:hover {
+
+                .link {
+                    opacity: 1;
+                }
+            }
+
+        @include bp(medium) {
+            width: 25%;
+            padding-bottom: 25%;
+
+            &:hover {
+
+                .link {
+                    opacity: 1;
+                }
+            }
+        }
+
+        @include bp(large) {
+            width: 25%;
+            padding-bottom: 25%;
+        }
+
+        &.pastill {
+            background: linear-gradient(135deg, #E8E8E6 0%, darken(#E8E8E6, 20%) 100%);
+
+            img {
+                position: absolute;
+                width: 80%;
+                left: -7%;
+                top: 15%;
+            }
+        }
+        &.ptlean {
+            background: linear-gradient(135deg, #428ECC 0%, darken(#428ECC, 15%) 100%);
+
+            img {
+                position: absolute;
+                right: -60%;
+                max-width: 135%;
+                top: 15%;
+            }
+        }
+        &.b2bonline {
+            background: linear-gradient(135deg, #07b17b 0%, darken(#07b17b, 15%) 100%);
+
+            img {
+                position: absolute;
+                right: -5%;
+                max-width: 110%;
+                top: 15%;
+            }
+        }
+        &.cholat {
+            background: linear-gradient(135deg, #444444 0%, #111111 100%);
+
+            img {
+                position: absolute;
+                width: 70%;
+                left: 15%;
+                top: 15%;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+//
+// START-PAGE
+//
+
+.start-page {
+    flex: 1;
+    display: flex;
+
+    .row {
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+    }
+}
+
+// .services {
+//     padding: 50px 0;
+
+//     .item {
+//         margin-bottom: 30px;
+
+//         &:last-child {
+//             margin-bottom: 0;
+//         }
+//     }
+
+//     @include bp(large) {
+//         padding: 0;
+
+//         .item {
+//             width: 33.3333%;
+//             float: left;
+//             border-right: 1px solid #dfdfdf;
+//             padding: 7rem 5rem;
+//             text-align: center;
+//             min-height: 320px;
+//             margin-bottom: 0;
+
+//             &:first-child {
+
+//                 padding-left: 0;
+//             }
+
+//             &:last-child {
+
+//                 border: none;
+//                 padding-right: 0;
+//             }
+
+//             h2 {
+
+//             }
+//         }
+//     }
+// }

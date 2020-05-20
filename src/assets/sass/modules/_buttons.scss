@@ -1,0 +1,48 @@
+//
+// Buttons
+//
+
+
+.btn, .btn:visited {
+    background: #3a3c41;
+    padding: 14px 25px 11px;
+    color: #fff;
+    font-weight: $regular;
+    border-radius: 50px;
+}
+
+//
+// Get started - Call to action above footer on each page
+//
+
+
+.getstarted {
+    background: #fafafa;
+    border-top: 1px solid #dfdfdf;
+    padding: 6rem 0 6rem;
+}
+
+//
+// INTRO
+//
+
+
+.intro {
+    padding: 90px 0;
+
+    @include bp(medium) {
+        padding: 160px 0;
+    }
+
+    @include bp(large) {
+        padding: 180px 0;
+    }
+
+    @include bp(wide) {
+        padding: 220px 0;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}

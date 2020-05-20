@@ -1,0 +1,140 @@
+//
+// TYPOGRAPHY
+//
+
+
+// -------------------------------------------------------------
+// # Font face
+// -------------------------------------------------------------
+
+@import url("//hello.myfonts.net/count/2de3d5");
+
+@font-face {
+    font-family: 'Geogrotesque-Light';
+    src: url('../fonts/2DE3D5_0_0.eot');
+    src: url('../fonts/2DE3D5_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2DE3D5_0_0.woff2') format('woff2'),
+         url('../fonts/2DE3D5_0_0.woff') format('woff'),
+         url('../fonts/2DE3D5_0_0.ttf') format('truetype'),
+         url('../fonts/2DE3D5_0_0.svg#wf') format('svg');
+}
+
+@font-face {
+    font-family: 'Geogrotesque-Regular';
+    src: url('../fonts/2DE3D5_2_0.eot');
+    src: url('../fonts/2DE3D5_2_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2DE3D5_2_0.woff2') format('woff2'),
+         url('../fonts/2DE3D5_2_0.woff') format('woff'),
+         url('../fonts/2DE3D5_2_0.ttf') format('truetype'),
+         url('../fonts/2DE3D5_2_0.svg#wf') format('svg');
+}
+
+@font-face {
+    font-family: 'Geogrotesque-Medium';
+    src: url('../fonts/2DE3D5_1_0.eot');
+    src: url('../fonts/2DE3D5_1_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2DE3D5_1_0.woff2') format('woff2'),
+         url('../fonts/2DE3D5_1_0.woff') format('woff'),
+         url('../fonts/2DE3D5_1_0.ttf') format('truetype'),
+         url('../fonts/2DE3D5_1_0.svg#wf') format('svg');
+}
+
+
+// -------------------------------------------------------------
+// # Block level
+// -------------------------------------------------------------
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    font-weight: $regular;
+    font-family: $sans;
+    margin-top: 0;
+    margin-bottom: $font-size;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+    font-weight: $regular;
+    margin-bottom: 0;
+
+    @include bp(medium) {
+        font-size: 2.7rem;
+    }
+
+    @include bp(large) {
+        font-size: 3rem;
+    }
+
+    @include bp(wide) {
+        font-size: 3.3rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 1.8rem;
+
+    @include bp(medium) {
+        font-size: 2rem;
+    }
+
+    @include bp(large) {
+        font-size: 2.2rem;
+    }
+
+    @include bp(wide) {
+        font-size: 2.6rem;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.6rem;
+    font-family: $sans-light;
+
+    @include bp(medium) {
+        font-size: 1.8rem;
+    }
+
+}
+
+h4, .h4 {
+    font-size: 24px;
+    color: #fff;
+
+    @include bp(medium) {
+        font-size: 22px;
+    }
+
+    @include bp(large) {
+        font-size: 28px;
+    }
+
+    @include bp(wide) {
+        font-size: 30px;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $font-size;
+}
+
+
+// -------------------------------------------------------------
+// # Inline level
+// -------------------------------------------------------------
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: $red;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

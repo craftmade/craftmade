@@ -1,0 +1,42 @@
+//
+// Mixins
+//
+
+
+// -------------------------------------------------------------
+// # Media queries
+// -------------------------------------------------------------
+
+// @include bp(medium) { property: value; }
+@mixin bp($point) {
+    @if $point == small {
+        @media (min-width: $bp-small) { @content; }
+    }
+    @else if $point == medium {
+        @media (min-width: $bp-medium) { @content; }
+    }
+    @else if $point == large {
+        @media (min-width: $bp-large) { @content; }
+    }
+    @else if $point == wide {
+        @media (min-width: $bp-wide) { @content; }
+    }
+}
+
+
+// -------------------------------------------------------------
+// # Clearfix
+// -------------------------------------------------------------
+
+// @include clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

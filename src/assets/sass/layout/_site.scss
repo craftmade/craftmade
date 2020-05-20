@@ -1,0 +1,70 @@
+//
+// SITE
+//
+
+
+// -------------------------------------------------------------
+// # Site layout
+// -------------------------------------------------------------
+
+// Use a site wrapper?
+// In that case remove width declarations on .row
+
+.site {
+     @extend .center;
+     background: #fff;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
+.row {
+    width: $site-width-mobile;
+    @extend .center;
+    @include clearfix;
+
+    @include bp(medium) {
+        width: $site-width-tablet;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+
+    @include bp(medium) {
+        flex-direction: row;
+
+    }
+}
+
+.banner {
+    padding: 90px 0;
+
+    @include bp(medium) {
+        padding: 120px 0;
+    }
+
+    @include bp(large) {
+        padding: 140px 0;
+    }
+
+    @include bp(wide) {
+        padding: 180px 0;
+    }
+}
+
+.banner-small {
+    padding: 60px 0;
+
+    @include bp(medium) {
+        padding: 90px 0;
+    }
+
+    @include bp(large) {
+        padding: 120px 0;
+    }
+}
+
+
+

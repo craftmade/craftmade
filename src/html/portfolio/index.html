@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% set activePage = "portfolio" %}
+
+{% block content %}
+    <div class="banner row">
+        <h1><span class="break-line">Vi gör strategi, design & utveckling.</span>
+        Här är ett urval av de projekt och produkter vi levererat.</h1>
+    </div>
+    <div class="portfolio-section">
+        <div class="item pastill">
+            <img src="../img/pastill.png">
+            <div class="link">
+                <h4>Pastillfabriken</h4>
+                <a href="https://www.pastillfabriken.se">Besök sidan</a>
+            </div>
+        </div>
+        <div class="item cholat">
+            <img src="../img/cholat.png">
+            <div class="link">
+                <h4>Cholat Paris</h4>
+                <a href="http://www.cholatparis.com">Besök sidan</a>
+            </div>
+        </div>
+        <div class="item b2bonline">
+            <img src="../img/b2bonline.png">
+            <div class="link">
+                <h4>B2B Online</h4>
+                <a href="http://www.b2bonline.se">Besök sidan</a>
+            </div>
+        </div>
+        <div class="item ptlean">
+            <img src="../img/ptlean.png">
+            <div class="link">
+                <h4>PT Lean</h4>
+                <a href="http://www.ptlean.se">Besök sidan</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner-small row">
+        <h2 class="mb0">Har du något projekt på gång? <a class="" href="/kontakt">Kontakta&nbsp;oss</a>.</h2>
+    </div>
+
+{% endblock %}
