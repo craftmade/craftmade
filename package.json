@@ -1,9 +1,13 @@
 {
-  "name": "simonwallstrom",
-  "version": "0.0.0",
-  "description": "",
+  "name": "craftmade",
+  "version": "1.0.0",
+  "license": "ISC",
+  "description": "Craftmades official website",
   "main": "gulpfile.js",
-  "scripts": {},
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp prod"
+  },
   "repository": {},
   "author": "Simon Wallström",
   "devDependencies": {

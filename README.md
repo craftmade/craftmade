@@ -18,11 +18,10 @@ Craftmade's official website.
 
 ## Installation
 
-1. cd to project and run `npm install`
-2. Run `gulp` to build and start server on port 3000
+1. cd to project and run `yarn install`
+2. Run `yarn start` to build and start server on port 3000
 
 ## Tasks
 
-1. `gulp` - Default task to build and run server
-2. `gulp prod` - Minify everything to prepare for deploy
-3. `gulp deploy` - Deploy to gh-pages
+1. `yarn start` - Default task to build and run server
+2. `yarn build` - Minify everything to prepare for deploy

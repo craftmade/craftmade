@@ -6,7 +6,6 @@
 // TASKS
 // 1. `gulp` - Default task to build and run server
 // 2. `gulp prod` - Minify everything to get ready for deploy
-// 3. `gulp deploy` - Deploy to gh-pages
 
 // -------------------------------------------------------------
 // # Import plugins
@@ -39,7 +38,7 @@ var gulp            = require('gulp'),
 var basePath = {
     src:    './src/',
     dev:   './dev/',
-    prod:   './prod/'
+    prod:   './build/'
 };
 
 var src = {
