@@ -19,7 +19,6 @@ var gulp            = require('gulp'),
     minifyCSS       = require('gulp-minify-css'),
     uglify          = require('gulp-uglify'),
     concat          = require('gulp-concat');
-    jshint          = require('gulp-jshint'),
     imagemin        = require('gulp-imagemin'),
     cache           = require('gulp-cache'),
     browserSync     = require('browser-sync'),
@@ -120,15 +119,6 @@ gulp.task('sassProd', ['sass'], function() {
 // -------------------------------------------------------------
 // # JS
 // -------------------------------------------------------------
-
-gulp.task('jshint', function () {
-    gulp.src([src.js + '*.js'])
-        .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'))
-        .pipe(jshint.reporter('fail'))
-        .on('error', handleError);
-
-});
 
 gulp.task('js', function() {
     return gulp.src([
@@ -258,7 +248,6 @@ gulp.task('default', ['clean'], function (cb) {
     runSequence([
         'html',
         'sass',
-        'jshint',
         'js',
         'img',
         'fonts',
