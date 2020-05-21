@@ -169,7 +169,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('fontsProd', function() {
-    gulp.src(dev.fonts + '*')
+    gulp.src(src.fonts + '*')
     .pipe(gulp.dest(prod.fonts));
 });
 
@@ -187,7 +187,7 @@ gulp.task('copyMisc', function() {
 
 gulp.task('copyMiscProd', function() {
     gulp.src([
-        basePath.dev + 'favicon.ico',
+        basePath.src + 'favicon.ico',
     ])
     .pipe(gulp.dest(basePath.prod));
 });
